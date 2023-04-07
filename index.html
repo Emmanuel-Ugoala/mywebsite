@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dd5ebe2491.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo2.png" alt="logo2" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>
+            Hi, I'm <span>Emmanuel</span><br />
+            Ugoala From Nigeria
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!------------about--------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user_2.png" alt="user_2" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              <span>I'm a highly skilled and talented professional Software Engineer,with six years of experience I have a deep understanding of both software development and robotics.</span><br />I am committed to creating innovative solutions to complex problems and i'm driven by a desire to push the boundaries of technology.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+
+              <P class="tab-links" onclick="opentab('awards')">Awards</P>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX</span><br />Design Websites and Applications
+                </li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS Apps
+                </li>
+                <li><span>Robot Development</span><br />3D Modelling and Robot programming</li>
+                <li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+              <li>
+                <span>Apr 2018 - Present</span><br />IT Manager at Brick Solution Brazil.
+              </li>
+                <li>
+                  <span>Jun 2018 - Sep 2019</span><br />Robot Designer/Programmer at Cogmation Robotics,Canada.
+                </li>
+                <li>
+                  <span>Sep 2019 - Feb 2020</span><br />STEM Consultant at OnPurpose Robotics,USA.
+                </li>
+                <li>
+                  <span>Apr 2017 - Aug 2021</span><br />Robot Educator and Programmer at STEM Connection,USA.
+                </li>
+                <li>
+                  <span>Sep 2015 - present</span><br />Lead Software Developer & Programmer at Titanix Robotics
+                  
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2015</span><br />Web/App Development Training at WIFI COMBAT ACADEMY </li>
+                  <li><span>2016</span><br />Robot design and programing Training at Lagos state Ministry of Science and Technology</li>
+                <li><span>2021</span><br />Yaba College of Technology</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="awards">
+              <ul>
+                <li>
+                  <span>2016</span><br />LETTER OF COMMENDATION-represented Lagos state at the 2015 World Robot Olympiad, National Finals, in which Lagos state emerged as the overall best state.
+                  </li>
+                <li><span>2017</span><br />Certificate of Recognition at the 2017 World Robot Olympiad,Nigeria.</li>
+                <li><span>2018</span><br />Merit Award Certificate as the Overall best at the 2018 World Robot Olympiad,Nigeria.</li>
+                <li><span>2019</span><br />LEGO Robot Remix #6 Winner</li>
+
+                <li><span>2019</span><br />Certificate of Recognition as the Best Robotics coach at the 2019 World Robot Olympiad,Nigeria.</li>
+                <li><span>2020</span><br />Certificate of Recognition as the Best Robotics coach at the 2020 WRO Robot Virtual Games.</li>
+                <li><span>2021</span><br />Certificate of Recognition as the Best Robotics coach at the 2021 WRO Robot Virtual Games.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------services-------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I build a customized website design that's perfect for your
+              business or personal site and work with you to create a design
+              that matches your brand, this include conceptualizing and implementing creative ideas for client websites, as well as creating visual elements that are in line with my clients.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Web_design" class="btn">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              As a UI/UX designers, i create a user interface for an app,
+              website, or other interactive media.My work includes collaborating
+              with product managers and engineers to gather requirements from
+              users before designing ideas that can be communicated using
+              storyboards.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/User_experience_design" class="btn">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              As a mobile app developer,i uses programming languages and
+              development skills to create, test, and develop applications on
+              mobile devices. I work in popular operating system environments
+              like iOS and Android and often take into account UI and UX
+              principles when creating applications.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Mobile_app" class="btn">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-android"></i>
+            <h2>Robot Design</h2>
+            <p>
+              I offer professional design and development services for robotic systems. I create robots for a wide range of industries, including manufacturing, healthcare, education, and entertainment.The goal of my robot design is to create robots that are reliable, efficient, and safe to operate, while also being cost-effective and easy to maintain.
+              I work closely with my clients to understand their needs and develop customized solutions that meet their specific requirements.
+            </p>
+            <a href="http://www.thenxtstep.com/2019/03/robot-remix-6_8.html" class="btn">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------portfolio--------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="work" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Social media apps allow users to have conversations, share information and create web content. 
+              </p>
+              <a href="https://my-sixth-assignment.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="work" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+               This app allow users to listen to their favorite music,specific artists or albums, and create a personal playlist
+              </p>
+              <a href="https://audiomack.com/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="work" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                Shopping apps are designed to make it easy for customers to find and buy the products they need online. 
+              </p>
+              <a href="https://my-commercejs-store.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://facebook.com/titanix.robotics" class="btn">See more</a>
+      </div>
+    </div>
+    <!-----------------contact-------------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> ugoalaemmanuel2@gmail.com
+            </p>
+            <p>
+              <i class="fa-sharp fa-solid fa-square-phone"></i> +2349023947533
+            </p>
+            <div class="social-icons">
+              <a href="https://facebook.com/emmanuel.ugoala2"
+                ><i class="fa-brands fa-facebook"></i></a>
+              <a
+                href="https://twitter.com/UgoalaEmmanuel1?t=e-6Xx2fkNEAjw6CuUxE-aw&s=09"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://instagram.com/emmanuel_ugoala?igshid=ZDdkNTZiNTM="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/emmanuel-ugoala-9801b4159"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://wa.me/qr/5YDUCVHGAL5AL1"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © 2023 Copyright by Emmanuel. All Rights Reserved. Made with
+          <i class="fa-solid fa-heart"></i>
+        </p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyG2ZGPdPcs7JnxWyhtMcYvAOBk2AZDa3ZR6usoFg_sg8SDPJUBkzxgfngGBizA1L-waw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
